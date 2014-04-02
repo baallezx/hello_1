@@ -1,0 +1,18 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Assign(targets=[
+		Name(id='backup_list', 
+			ctx=Store())], 
+		value=Call(
+			func=Name(id='map', 
+				ctx=Load()), args=[
+			Attribute(
+				value=Name(id='str', 
+					ctx=Load()), attr='strip', 
+				ctx=Load()), 
+			Call(
+				func=Attribute(
+					value=Str(s=' ${Backup List} '), attr='split', 
+					ctx=Load()), 
+				args=[Str(s=',')], keywords=[], starargs=None, kwargs=None)], keywords=[], starargs=None, kwargs=None))])
+#----------------------------------------------------------------------------------------------------------------

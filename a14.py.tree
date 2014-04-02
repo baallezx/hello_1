@@ -1,0 +1,8 @@
+Module(body=[
+	Expr(
+		value=Subscript(
+			value=Name(id='params', 
+				ctx=Load()), 
+			slice=Index(
+				value=Str(s='Some.Value')), 
+			ctx=Load()))])

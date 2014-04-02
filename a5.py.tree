@@ -1,0 +1,11 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Assign(targets=[
+		Name(id='params', 
+			ctx=Store())], 
+		value=Call(
+			func=Attribute(
+				value=Name(id='parametertools', 
+					ctx=Load()), attr='parse_dma_params', 
+				ctx=Load()), args=[], keywords=[], starargs=None, kwargs=None))])
+#----------------------------------------------------------------------------------------------------------------

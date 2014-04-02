@@ -1,0 +1,25 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Assign(targets=[
+		Name(id='compressed_files', 
+			ctx=Store())], 
+		value=Call(
+			func=Name(id='filter', 
+				ctx=Load()), args=[
+			Name(id='bool', 
+				ctx=Load()), 
+			ListComp(
+				elt=Call(
+					func=Attribute(
+						value=Name(id='x', 
+							ctx=Load()), attr='strip', 
+						ctx=Load()), args=[], keywords=[], starargs=None, kwargs=None), generators=[
+				comprehension(
+					target=Name(id='x', 
+						ctx=Store()), 
+					iter=Call(
+						func=Attribute(
+							value=Str(s=' ${Downloaded Files} '), attr='split', 
+							ctx=Load()), args=[
+						Str(s=',')], keywords=[], starargs=None, kwargs=None), ifs=[])])], keywords=[], starargs=None, kwargs=None))])
+#----------------------------------------------------------------------------------------------------------------

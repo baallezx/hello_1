@@ -1,0 +1,17 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Import(names=[
+		alias(name='parametertools', asname=None)]), 
+	Assign(targets=[
+		Name(id='param1', 
+			ctx=Store())], 
+		value=Str(s=' ${ Some.Type.Of.Name}  ')), 
+	Assign(targets=[
+		Subscript(value=
+			Name(id='some_dictionary', 
+				ctx=Load()), 
+			slice=Index(
+				value=Str(s='key')), 
+			ctx=Store())], 
+		value=Str(s='value'))])
+#----------------------------------------------------------------------------------------------------------------

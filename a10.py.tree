@@ -1,0 +1,15 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Assign(targets=[
+		Name(id='some_var', 
+			ctx=Store())], 
+		value=Call(
+			func=Attribute(
+				value=Subscript(
+					value=Name(id='params', 
+						ctx=Load()), 
+					slice=Index(
+						value=Str(s='Injectable Code')), 
+					ctx=Load()), attr='strip', 
+				ctx=Load()), args=[], keywords=[], starargs=None, kwargs=None))])
+#----------------------------------------------------------------------------------------------------------------

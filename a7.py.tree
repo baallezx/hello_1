@@ -1,0 +1,18 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Assign(targets=[
+		Name(id='params', 
+			ctx=Store())], 
+		value=Dict(keys=[], values=[])), 
+	Assign(targets=[
+		Subscript(
+			value=Name(id='params', 
+				ctx=Load()), 
+			slice=Index(
+				value=Str(s='Extract Dir')), 
+			ctx=Store())], 
+		value=Call(
+			func=Attribute(
+				value=Str(s=' ${Extract Dir } '), attr='strip', 
+				ctx=Load()), args=[], keywords=[], starargs=None, kwargs=None))])
+#----------------------------------------------------------------------------------------------------------------

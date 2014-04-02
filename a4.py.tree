@@ -1,0 +1,10 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Assign(targets=[
+		Name(id='param1', 
+			ctx=Store())], 
+	value=Call(
+		func=Attribute(
+			value=Str(s=' ${Some.Kind.Of.Name} '), attr='strip', 
+			ctx=Load()), args=[], keywords=[], starargs=None, kwargs=None))])
+#----------------------------------------------------------------------------------------------------------------

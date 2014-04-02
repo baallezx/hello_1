@@ -1,0 +1,29 @@
+#----------------------------------------------------------------------------------------------------------------
+Module(body=[
+	Assign(targets=[
+		Name(id='params', 
+			ctx=Store())], 
+		value=Dict(keys=[
+			Str(s='Backup List')], values=[
+			Str(s='1')])), 
+	Assign(targets=[
+		Name(id='backup_list', 
+			ctx=Store())], 
+		value=Call(
+			func=Name(id='map', 
+				ctx=Load()), args=[
+			Attribute(
+				value=Name(id='str', 
+					ctx=Load()), attr='strip', 
+				ctx=Load()), 
+			Call(
+				func=Attribute(
+					value=Subscript(
+						value=Name(id='params', 
+							ctx=Load()), 
+						slice=Index(
+							value=Str(s='Backup List')), 
+						ctx=Load()), attr='split', 
+					ctx=Load()), args=[
+				Str(s=',')], keywords=[], starargs=None, kwargs=None)], keywords=[], starargs=None, kwargs=None))])
+#----------------------------------------------------------------------------------------------------------------
